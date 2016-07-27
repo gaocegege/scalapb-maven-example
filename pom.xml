@@ -46,12 +46,12 @@
               <classpathScope>compile</classpathScope>
               <executableDependency>
                 <groupId>com.trueaccord.scalapb</groupId>
-                <artifactId>scalapbc</artifactId>
+                <artifactId>scalapbc_2.11</artifactId>
               </executableDependency>
               <arguments>
                 <argument>--proto_path=${project.basedir}/src/main/proto</argument>
                 <argument>--scala_out=${project.build.directory}/generated-sources/proto</argument>
-                <argument>${project.basedir}/src/main/proto/*.proto</argument>
+                <argument>${project.basedir}/src/main/proto/example.proto</argument>
               </arguments>
             </configuration>
           </execution>
@@ -59,8 +59,8 @@
         <dependencies>
           <dependency>
             <groupId>com.trueaccord.scalapb</groupId>
-            <artifactId>scalapbc</artifactId>
-            <version>0.4.20</version>
+            <artifactId>scalapbc_2.11</artifactId>
+            <version>0.5.34</version>
           </dependency>
         </dependencies>
       </plugin>
